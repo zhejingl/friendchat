@@ -1,0 +1,118 @@
+.icon-button {
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    align-content: center;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.footer{
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    color: #002A54;
+}
+
+div.text-box {
+    margin: auto
+}
+
+.center-me {
+    margin: auto;
+}
+
+div.text-box p {
+    margin: 5%;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon-panel {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.icon-panel-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#more {
+    cursor: grabbing;
+}
+
+.icon-button :hover {
+    cursor: grabbing;
+}
+.icon-panel:hover{
+    cursor: grabbing;
+}
+.icon-label{
+  font-size: 18px;
+  font: bold;
+  color: #002D72;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pull-quoto-banner img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.carousel {
+    height: 15vw;
+    width: 60vw;
+    border: 1px solid;
+    display: block;
+    margin: auto;
+    margin-top: 1vw;
+    border-radius: 10px;
+}
+
+.dallas {
+    opacity: 0.91;
+    margin: auto;
+    margin-top: 1vw;
+    width: 100%;
+    height: auto;
+}
+
+.bottom-right {
+    margin-top: 1vw;
+    width: 100%;
+    height: auto;
+}
+.bottom-right {
+    margin-top: 1vw;
+    width: 100%;
+    height: auto;
+}
+.header {
+    position: relative;
+    color: white;
+}
+
+.example-form-field {
+    
+    margin-left: 10%;
+    margin-top: 20px;
+    position: center;
+    width: 80%;
+  }
+  

@@ -1,0 +1,47 @@
+<mat-toolbar color="primary" class="header-box-shadow" style="height: 80px">
+    <mat-toolbar-row style="background-color: white; margin: 0px; height: 6=50px;">
+        <h5 style="align-self: bottom; color: black;">Friend Chat Demo</h5>
+    </mat-toolbar-row>
+</mat-toolbar>
+<img src="../../../assets/coporate.jpg" class="responsive">
+<div>
+    <form class="container" fxLayoutAlign="center center">
+        <mat-card class="example-card">
+        <mat-card-header fxLayoutAlign="center center">
+            <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <mat-card-content fxLayoutAlign="center center">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <table class="example-full-width" cellspacing="0">
+                    <tr>
+                        <td class="text-center">
+                            <span class="text-muted"><small>Use credentials to Login</small></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <input style="width: 40%" matInput placeholder="Username" formControlName="user"
+                                    name="userId" required>
+
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="example-full-width">
+                                <input (keyup.enter)="onSubmit()" submit="onSubmit()" matInput placeholder="Password"
+                                    formControlName="password" name="password" type="password" required>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </mat-card-content>
+        <mat-card-action fxLayoutAlign="center center">
+            <button mat-raised-button color = "primary" (click)="onSubmit()">Login</button>
+        </mat-card-action>
+    </mat-card>
+    </form>
+</div>

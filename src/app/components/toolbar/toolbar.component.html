@@ -1,0 +1,48 @@
+
+
+<mat-toolbar color="primary" class="header-box-shadow" style="height: 80px">
+    <mat-toolbar-row style="background-color: white; margin: 0px; height: 50px">
+        <h5 style="align-content: bottom; color: black">Friend Chat</h5>
+        <span></span>
+
+        <span class="example-fill-remaining-space"></span>
+        <button mat-button [matMenuTriggerFor]="menu">
+            <img style="align-self: top" src="../../../assets/icons/burger-icon.png" width="30px" height="30px" />
+        </button>
+        <span></span>
+        <div>
+            <img style="align-self: top" src="../../../assets/icons/user-icon.png" width="30px" height="30px" />
+            <span style=" align-content: bottom; font-size: 11px; color: black">Jim</span>
+        </div>
+    </mat-toolbar-row>
+    
+    <mat-toolbar-row style=" margin: 0px; height: 50px;width: 100%" fxLayout="row">
+        <div class="">
+
+        </div>
+        <span class= "example-fill-remaining-space"></span>
+        <button class="ten" mat-button (click)="viewProfile()">
+            My Account
+        </button>
+        <button class="ten" mat-button (click)="logoff()">
+            Log Out
+        </button>
+
+    </mat-toolbar-row>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item (click) = "home()">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+        </button>
+        <button mat-menu-item (click) = "review()">
+            <mat-icon>autorenew</mat-icon>
+            <span>Review Data</span>
+        </button>
+        <button mat-menu-item (click) = "loaddailymed()">
+            <mat-icon>bar_chart</mat-icon>
+            <span>Load DailyMed Data</span>
+        </button>
+    </mat-menu>
+    
+    
+</mat-toolbar>
